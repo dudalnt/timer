@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainTimer/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainTimer from './components/main-timer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    MainTimer,
+}
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-image: url("./assets/background.jpg");
+  width:100%;	
+  height:100%;
+  position:fixed;
+  background-size:100% 100%;
 }
 </style>
